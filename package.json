@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tenebricosa/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenebricosa/blog/issues"
+  },
+  "homepage": "https://github.com/tenebricosa/blog",
+  "dependencies": {
+    "node-sass": "~0.9.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-sass": "~0.14.1",
+    "load-grunt-tasks": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

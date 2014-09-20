@@ -1,0 +1,37 @@
+@media screen and (max-width: 980px) {
+
+	.index-content {
+		&__article-block {
+	        padding-left: 0;
+		}
+
+		&__article-block:first-child {
+	        margin-bottom: 2em;
+		}
+	}
+
+    .g__col--4 {
+        width: 100%;
+    }
+    .g__col--6 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .layout-content-block {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .layout-content-block {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .layout-content-block {
+        width: 60%;
+    }
+}

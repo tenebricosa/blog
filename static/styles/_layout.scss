@@ -1,0 +1,53 @@
+html {
+    color: $font-color-primary;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.layout-content-block {
+    margin: 0 auto; 
+    width: 80%;
+}
+
+.g__row {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 2em;
+
+    &:before {
+        clear: both;
+        content: '';
+        display: block;
+    }
+}
+
+.g__col--4,
+.g__col--6,
+.g__col--10 {
+    float: left;
+    position: relative;
+}
+.g__col--4 {
+    width: 39%;
+}
+.g__col--6 {
+    width: 59%;
+}
+.g__col--10 {
+    width: 100%;
+}
+
+.footer {
+    margin: 7em 0 2em;
+
+    &__sign {
+        font-size: 0.8em;
+    }
+
+    &__sign--gray {
+        color: $font-color-gray;
+    }
+}
