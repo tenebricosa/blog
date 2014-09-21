@@ -10,6 +10,7 @@
 	<title>Title</title>
 </head>
 <body>
+{% block header %}
 	<div class="index-header">
 		<div class="layout-content-block">
 			<div class="index-header__title-block">
@@ -18,7 +19,9 @@
 			</div>
 		</div>
 	</div>
+{% endblock %}
 	<div class="layout-content-block">
+{% block content %}
 		<div class="index-content">
 			<div class="g__row">
 				<div class="index-content__article-block g__col--4">
@@ -93,6 +96,8 @@
 				</div>
 			</div>
 		</div>
+{% endblock %}
+
 	</div>
 	<div class="layout-content-block">
 		<div class="footer">
