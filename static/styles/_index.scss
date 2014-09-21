@@ -1,51 +1,9 @@
-$header-circle-size: 2em;
-$header-icon-size: 1.3em;
-$header-icon-lineheight: $header-circle-size / $header-icon-size;
-
 .index-header {
 	&__title-block {
 		width: 40%;
 		margin: 4em auto;
 		text-align: center;
 		min-width: 24em;
-	}
-
-	&__link-block {
-		float: right;
-		position: relative;
-		margin: -3em 2.5em 0 0;
-	}
-}
-
-.link-block {
-	&__link {
-		color: $font-color-blue;
-		position: relative;
-		width: $header-circle-size;
-		height: $header-circle-size;
-		border-radius: 50%;
-		border: 0.1em solid;
-		float: left;
-		margin-left: 1em;
-		text-align: center;
-		@extend .fa;
-	}
-
-	&__link:before {
-		font-size: $header-icon-size;
-		line-height: $header-icon-lineheight;
-	}
-
-	&__link--twitter:before {
-		@extend .fa-twitter;
-	}
-
-	&__link--steam:before  {
-		@extend .fa-steam;
-	}
-
-	&__link--github:before  {
-		@extend .fa-github-alt;
 	}
 }
 
