@@ -1,0 +1,23 @@
+.post-header {
+	&__title-block {
+		margin: $layout-header-margin;
+	}
+}
+
+.post-content-block {
+    margin: 0 auto; 
+    width: 55%;
+}
+
+.post-content {
+	font-size: 1.2em;
+	line-height: 1.7em;
+
+	&__paragraph {
+		margin: 2.2em 0;
+	}
+
+	&__link {
+		color: $font-color-blue;
+	}
+}

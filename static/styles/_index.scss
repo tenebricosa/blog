@@ -1,10 +1,15 @@
 .index-header {
 	&__title-block {
 		width: 40%;
-		margin: 4em auto;
+		margin: $layout-header-margin;
 		text-align: center;
 		min-width: 24em;
 	}
+}
+
+.index-content-block {
+    margin: 0 auto; 
+    width: 80%;
 }
 
 .title-block {
