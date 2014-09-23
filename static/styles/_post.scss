@@ -2,6 +2,19 @@
 	&__title-block {
 		margin: $layout-header-margin;
 	}
+
+	&__button-to-main-block {
+		color: $font-color-blue;
+		border: 0.1em solid;
+		display: inline-block;
+		position: absolute;
+		padding: 0.4em 0.9em;
+		border-radius: 999em;
+	}
+}
+
+.button-to-main-block__link {
+	font-size: 1.3em;
 }
 
 .post-content-block {
