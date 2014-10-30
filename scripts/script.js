@@ -1,4 +1,4 @@
-$(".post-header__button-to-main-block").hover(
+$("#button-to-main").hover(
     function () {
         $(this).removeClass('front').addClass('back');
     },
