@@ -1,4 +1,4 @@
-$link-block-circle-size: 2em;
+$link-block-circle-size: 2.3em; /* Высота должна соответствовать высоте кнопки "Home" */
 $link-block-icon-size: 1.3em;
 $link-block-icon-lineheight: $link-block-circle-size / $link-block-icon-size;
 
@@ -49,11 +49,14 @@ a {
     &__sign--gray {
         color: $font-color-gray;
     }
+}
 
+.header {
     &__link-block {
         float: right;
-        position: relative;
-        margin-top: 0;
+        position: fixed;
+        top: 1em;
+        right: 1.3em;
     }
 }
 
@@ -69,6 +72,8 @@ a {
         margin-left: 1em;
         text-align: center;
         @extend .fa;
+    }
+    &__link:hover {
     }
 
     &__link:before {

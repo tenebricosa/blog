@@ -1,15 +1,24 @@
 .post-header {
 	&__title-block {
-		margin: $layout-header-margin;
+		margin: 8em 0 4em;
 	}
 
 	&__button-to-main-block {
 		color: $font-color-blue;
 		border: 0.1em solid;
 		display: inline-block;
-		position: absolute;
+		position: fixed;
 		padding: 0.4em 0.9em;
 		border-radius: 999em;
+		top: 1em;
+		left: 1.3em;
+		cursor: pointer;
+	}
+	&__button-to-main-block:hover {
+        -webkit-animation: pulse 2s linear 1;
+        -moz-animation: pulse 2s linear 1;
+        -ms-animation: pulse 2s linear 1;
+        animation: pulse 2s linear 1;
 	}
 }
 

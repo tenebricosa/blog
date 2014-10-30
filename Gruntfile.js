@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
       sass: {
           options: {
-              sourceMap: true
+              sourceMap: false
           },
           dist: {
               files: {
