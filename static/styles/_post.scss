@@ -14,11 +14,17 @@
 		left: 1.3em;
 		cursor: pointer;
 	}
-	&__button-to-main-block:hover {
-        -webkit-animation: pulse 2s linear 1;
-        -moz-animation: pulse 2s linear 1;
-        -ms-animation: pulse 2s linear 1;
-        animation: pulse 2s linear 1;
+	&__button-to-main-block.back {
+		-webkit-animation: flip-back 0.3s linear 1;
+		-webkit-animation-fill-mode: forwards;
+	}
+	&__button-to-main-block.front {
+	    -webkit-transform: rotateY(-180deg);
+	    -ms-transform: rotateY(-180deg);
+	    -moz-transform: rotateY(-180deg);
+	    transform: rotateY(-180deg);
+		-webkit-animation: flip-front 0.3s linear 1;
+		-webkit-animation-fill-mode: forwards;
 	}
 }
 

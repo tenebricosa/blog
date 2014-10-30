@@ -6,6 +6,13 @@ html {
     color: $font-color-primary;
 }
 
+.preload * {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -74,6 +81,7 @@ a {
         @extend .fa;
     }
     &__link:hover {
+
     }
 
     &__link:before {
