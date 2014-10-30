@@ -1,17 +1,62 @@
 @-webkit-keyframes flip-front {
-to {
+   to {
       -webkit-transform: rotateY(0);
-      -ms-transform: rotateY(0);
+   }
+}
+@-moz-keyframes flip-front {
+   to {
       -moz-transform: rotateY(0);
+   }
+}
+@-ms-keyframes flip-front {
+   to {
+      -ms-transform: rotateY(0);
+   }
+}
+@keyframes flip-front {
+   to {
       transform: rotateY(0);
    }
 }
 
 @-webkit-keyframes flip-back {
-to {
+   to {
       -webkit-transform: rotateY(-180deg);
-      -ms-transform: rotateY(-180deg);
+   }
+}
+@-moz-keyframes flip-back {
+   to {
       -moz-transform: rotateY(-180deg);
+   }
+}
+@-ms-keyframes flip-back {
+   to {
+      -ms-transform: rotateY(-180deg);
+   }
+}
+@keyframes flip-back {
+   to {
       transform: rotateY(-180deg);
+   }
+}
+
+@-webkit-keyframes spin {
+   to {
+      -webkit-transform: rotate(360deg);
+   }
+}
+@-moz-keyframes spin {
+   to {
+      -moz-transform: rotate(360deg);
+   }
+}
+@-ms-keyframes spin {
+   to {
+      -ms-transform: rotate(360deg);
+   }
+}
+@keyframes spin {
+   to {
+      transform:rotate(360deg);
    }
 }

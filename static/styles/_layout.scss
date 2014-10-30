@@ -59,9 +59,14 @@ a {
 }
 
 .header {
+    position:fixed;
+    top: 0;
+    height: 5em;
+    width: 100%;
+
     &__link-block {
         float: right;
-        position: fixed;
+        position: absolute;
         top: 1em;
         right: 1.3em;
     }
@@ -80,13 +85,20 @@ a {
         text-align: center;
         @extend .fa;
     }
-    &__link:hover {
-
-    }
 
     &__link:before {
         font-size: $link-block-icon-size;
         line-height: $link-block-icon-lineheight;
+        -webkit-transition: transform 0.7s ease;
+        -moz-transition: transform 0.7s ease;
+        -ms-transition: transform 0.7s ease;
+        transition: transform 0.7s ease;
+    }
+    &__link:hover:before {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 
     &__link--twitter:before {
