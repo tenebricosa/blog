@@ -1,6 +1,5 @@
 .index-header {
 	&__title-block {
-		width: 40%;
 		margin: 4em auto;
 		text-align: center;
 		min-width: 24em;
@@ -21,7 +20,10 @@
 
 	&__description {
 		font-size: 1.4em;
-		margin: 0;
+		margin: 0 auto;
+		width: 60%;
+		max-width: 470px;
+		margin-top: 0.6em;
 	}
 
 	&__description--gray {
@@ -55,6 +57,8 @@
 
 	&__description {
 		margin: 0.3em 0 0;
+		line-height: 1.4em;
+		font-size: 0.9em;
 	}
 
 	&__description--gray {
@@ -71,4 +75,43 @@
 	&__time {
 		margin-right: 3em;
 	}
+}
+
+.index__link-block {
+	float: right;
+}
+
+.index-link {
+    &__link {
+        color: $font-color-blue;
+        display: inline-block;
+        float: left;
+        margin-left: 1em;
+    }
+
+    &__link.back {
+        -webkit-animation: flip-back 0.3s linear 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation: flip-back 0.3s linear 1;
+        -moz-animation-fill-mode: forwards;
+        -ms-animation: flip-back 0.3s linear 1;
+        -ms-animation-fill-mode: forwards;
+        animation: flip-back 0.3s linear 1;
+        animation-fill-mode: forwards;
+    }
+
+    &__link.front {
+        -webkit-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-animation: flip-front 0.3s linear 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation: flip-front 0.3s linear 1;
+        -moz-animation-fill-mode: forwards;
+        -ms-animation: flip-front 0.3s linear 1;
+        -ms-animation-fill-mode: forwards;
+        animation: flip-front 0.3s linear 1;
+        animation-fill-mode: forwards;
+    }
 }

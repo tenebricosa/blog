@@ -49,13 +49,11 @@ a {
 
 .footer {
     margin: 7em 0 2em;
-
-    &__sign {
-        font-size: 0.8em;
-    }
+    font-size: 0.8em;
 
     &__sign--gray {
         color: $font-color-gray;
+        line-height: 1.4em;
     }
 }
 
@@ -65,13 +63,6 @@ a {
     height: 5em;
     width: 100%;
     min-width: 640px;
-
-    &__link-block {
-        float: right;
-        position: absolute;
-        top: 1em;
-        right: 1.3em;
-    }
 
     &__button-to-main-block {
         color: $font-color-blue;
@@ -107,47 +98,5 @@ a {
         -ms-animation-fill-mode: forwards;
         animation: flip-front 0.3s linear 1;
         animation-fill-mode: forwards;
-    }
-}
-
-.link-block {
-    &__link {
-        color: $font-color-blue;
-        position: relative;
-        width: $link-block-circle-size;
-        height: $link-block-circle-size;
-        border-radius: 50%;
-        border: 0.1em solid;
-        float: left;
-        margin-left: 1em;
-        text-align: center;
-        @extend .fa;
-    }
-
-    &__link:before {
-        font-size: $link-block-icon-size;
-        line-height: $link-block-icon-lineheight;
-        -webkit-transition: transform 0.7s ease;
-        -moz-transition: transform 0.7s ease;
-        -ms-transition: transform 0.7s ease;
-        transition: transform 0.7s ease;
-    }
-    &__link:hover:before {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-
-    &__link--twitter:before {
-        @extend .fa-twitter;
-    }
-
-    &__link--steam:before  {
-        @extend .fa-steam;
-    }
-
-    &__link--github:before  {
-        @extend .fa-github-alt;
     }
 }

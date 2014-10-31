@@ -1,4 +1,4 @@
-$("#button-to-main").hover(
+$(".js-flip").hover(
     function () {
         $(this).removeClass('front').addClass('back');
     },

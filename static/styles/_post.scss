@@ -25,3 +25,52 @@
 		color: $font-color-blue;
 	}
 }
+
+.post__link-block {
+    float: right;
+    position: absolute;
+    top: 1em;
+    right: 1.3em;
+}
+
+.post-link {
+    &__link {
+        color: $font-color-blue;
+        position: relative;
+        width: $link-block-circle-size;
+        height: $link-block-circle-size;
+        border-radius: 50%;
+        border: 0.1em solid;
+        float: left;
+        margin-left: 1em;
+        text-align: center;
+        @extend .fa;
+    }
+
+    &__link:before {
+        font-size: $link-block-icon-size;
+        line-height: $link-block-icon-lineheight;
+        -webkit-transition: transform 0.7s ease;
+        -moz-transition: transform 0.7s ease;
+        -ms-transition: transform 0.7s ease;
+        transition: transform 0.7s ease;
+    }
+    &__link:hover:before {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    &__link--twitter:before {
+        @extend .fa-twitter;
+    }
+
+    &__link--steam:before  {
+        @extend .fa-steam;
+    }
+
+    &__link--github:before  {
+        @extend .fa-github-alt;
+    }
+}

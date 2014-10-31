@@ -15,13 +15,13 @@
         margin: 0 auto;
         min-width: 400px;
 
-        &__link-block {
-            right: 0;
-        }
-
         &__button-to-main-block {
             left: 0;
         }
+    }
+
+    .post__link-block {
+        right: 0;
     }
 }
 
@@ -48,16 +48,18 @@
 @media screen and (max-width: 640px) {
 
     .header {
-        &__link-block {
-            display: none;
-        }
+        min-width: 640px;
 
         &__button-to-main-block {
             font-size: 1.7em;
             padding: 0;
-            left: 0.1em;
+            left: 2.4em;
             border: none;
         }
+    }
+
+    .post__link-block {
+        display: none;
     }
 }
 
