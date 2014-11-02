@@ -1875,7 +1875,7 @@ a {
   .g__col--6 {
     width: 100%; } }
 
-@media screen and (max-width: 640px) {
+@media handheld {
   .header {
     min-width: 640px; }
     .header__button-to-main-block {
