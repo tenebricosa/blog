@@ -25,7 +25,7 @@
     }
 }
 
-@media handheld or (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
     .index-content {
         &__article-block {
@@ -45,7 +45,7 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media handheld or screen and (max-width: 640px) {
 
     .header {
         min-width: 640px;
