@@ -45,7 +45,7 @@
     }
 }
 
-@media handheld {
+@media screen and (max-width: 640px) {
 
     .header {
         min-width: 640px;
