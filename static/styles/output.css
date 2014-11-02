@@ -1876,6 +1876,9 @@ a {
     width: 100%; } }
 
 @media screen and (max-width: 640px) {
+  @viewport {
+    width: 100%; }
+
   .header {
     min-width: 640px; }
     .header__button-to-main-block {
