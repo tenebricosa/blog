@@ -4,6 +4,7 @@ $link-block-icon-lineheight: $link-block-circle-size / $link-block-icon-size;
 
 html {
     color: $font-color-primary;
+    font-size: 100%;
 }
 
 a {
@@ -77,6 +78,41 @@ a {
         animation-fill-mode: forwards;
     }
     &__button-to-main-block.front {
+        -webkit-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-animation: flip-front 0.3s linear 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation: flip-front 0.3s linear 1;
+        -moz-animation-fill-mode: forwards;
+        -ms-animation: flip-front 0.3s linear 1;
+        -ms-animation-fill-mode: forwards;
+        animation: flip-front 0.3s linear 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+.link-block {
+    &__link {
+        color: $font-color-blue;
+        display: inline-block;
+        float: left;
+        margin-left: 1em;
+    }
+
+    &__link.back {
+        -webkit-animation: flip-back 0.3s linear 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation: flip-back 0.3s linear 1;
+        -moz-animation-fill-mode: forwards;
+        -ms-animation: flip-back 0.3s linear 1;
+        -ms-animation-fill-mode: forwards;
+        animation: flip-back 0.3s linear 1;
+        animation-fill-mode: forwards;
+    }
+
+    &__link.front {
         -webkit-transform: rotateY(-180deg);
         -ms-transform: rotateY(-180deg);
         -moz-transform: rotateY(-180deg);

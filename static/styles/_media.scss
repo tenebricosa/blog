@@ -45,6 +45,10 @@
 }
 
 @media screen and (max-width: 720px) {
+    html {
+        font-size: 75%;
+    }
+
     .post-content-block {
         width: 90%;
     }
@@ -61,6 +65,16 @@
 
     .post__link-block {
         display: none;
+    }
+
+    .post-header__title-block {
+        margin: 6em 0 2em;
+    }
+
+    .post-content {
+        &__paragraph {
+            margin: 1em 0;
+        }
     }
 }
 

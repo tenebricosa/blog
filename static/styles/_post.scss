@@ -9,7 +9,7 @@
 }
 
 .post-content-block {
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 55%;
 }
 
@@ -73,4 +73,9 @@
     &__link--github:before  {
         @extend .fa-github-alt;
     }
+}
+
+.post-footer__link-block {
+	float: right;
+	clear: both;
 }
