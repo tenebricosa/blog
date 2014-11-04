@@ -1640,14 +1640,7 @@
 
 /* Высота должна соответствовать высоте кнопки "Home" */
 html {
-  color: #414141;
-  min-width: 640px; }
-
-.preload * {
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important; }
+  color: #414141; }
 
 a {
   text-decoration: none;
@@ -1686,8 +1679,7 @@ a {
   position: fixed;
   top: 0;
   height: 5em;
-  width: 100%;
-  min-width: 640px; }
+  width: 100%; }
   .header__button-to-main-block {
     color: #3DC6C3;
     border: 0.1em solid;
@@ -1732,7 +1724,6 @@ a {
 
 .title-block__title {
   font-size: 3.2em;
-  white-space: nowrap;
   margin: 0; }
 .title-block__description {
   font-size: 1.4em;
@@ -1858,8 +1849,7 @@ a {
     width: 80%;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    min-width: 400px; }
+    margin: 0 auto; }
     .header__button-to-main-block {
       left: 0; }
   .post__link-block {
@@ -1875,16 +1865,14 @@ a {
   .g__col--6 {
     width: 100%; } }
 
-@media screen and (max-width: 640px) {
-  @viewport {
-    width: 100%; }
-
+@media screen and (max-width: 720px) {
+  .post-content-block {
+    width: 90%; }
   .header {
-    min-width: 640px; }
+    width: 90%; }
     .header__button-to-main-block {
       font-size: 1.7em;
       padding: 0;
-      left: 2.4em;
       border: none; }
   .post__link-block {
     display: none; } }

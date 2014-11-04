@@ -4,14 +4,6 @@ $link-block-icon-lineheight: $link-block-circle-size / $link-block-icon-size;
 
 html {
     color: $font-color-primary;
-    min-width: 640px;
-}
-
-.preload * {
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
 }
 
 a {
@@ -62,7 +54,6 @@ a {
     top: 0;
     height: 5em;
     width: 100%;
-    min-width: 640px;
 
     &__button-to-main-block {
         color: $font-color-blue;

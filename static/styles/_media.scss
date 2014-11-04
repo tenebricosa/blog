@@ -13,7 +13,6 @@
         left: 0;
         right: 0;
         margin: 0 auto;
-        min-width: 400px;
 
         &__button-to-main-block {
             left: 0;
@@ -45,19 +44,17 @@
     }
 }
 
-@media screen and (max-width: 640px) {
-
-    @viewport {
-        width: 100%;
+@media screen and (max-width: 720px) {
+    .post-content-block {
+        width: 90%;
     }
 
     .header {
-        min-width: 640px;
+        width: 90%;
 
         &__button-to-main-block {
             font-size: 1.7em;
             padding: 0;
-            left: 2.4em;
             border: none;
         }
     }
