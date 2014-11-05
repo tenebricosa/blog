@@ -1680,7 +1680,7 @@ a {
   .footer__sign {
     font-size: 0.8em; }
   .footer__sign--gray {
-    color: #959595; }
+    color: rgba(0, 39, 59, 0.34902); }
 
 .header {
   position: fixed;
@@ -1767,7 +1767,7 @@ a {
   font-size: 1.4em;
   margin: 0; }
 .title-block__description--gray {
-  color: #959595; }
+  color: rgba(0, 39, 59, 0.34902); }
 
 .index-content__article-block {
   padding-left: 1%; }
@@ -1786,7 +1786,7 @@ a {
 .article-block__description {
   margin: 0.3em 0 0; }
 .article-block__description--gray {
-  color: #959595; }
+  color: rgba(0, 39, 59, 0.34902); }
 .article-block__additional {
   margin: 1em 0 0;
   font-size: 0.8em; }
