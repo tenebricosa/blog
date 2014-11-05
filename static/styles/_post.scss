@@ -80,6 +80,45 @@
 	clear: both;
 }
 
-#disqus_thread {
-    display: none;
+.post__open-comment {
+    color: $font-color-blue;
+    padding: 0.4em 0.9em;
+    border-radius: 999em;
+    border: 0.1em solid;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.open-comment__text {
+    font-size: 1.3em;
+}
+
+.post__open-comment-block {
+    text-align: center;
+}
+
+.js-flip.back {
+    -webkit-animation: flip-back 0.3s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: flip-back 0.3s linear 1;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation: flip-back 0.3s linear 1;
+    -ms-animation-fill-mode: forwards;
+    animation: flip-back 0.3s linear 1;
+    animation-fill-mode: forwards;
+}
+.js-flip.front {
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-animation: flip-front 0.3s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: flip-front 0.3s linear 1;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation: flip-front 0.3s linear 1;
+    -ms-animation-fill-mode: forwards;
+    animation: flip-front 0.3s linear 1;
+    animation-fill-mode: forwards;
 }
