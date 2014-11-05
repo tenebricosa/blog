@@ -122,3 +122,17 @@
     animation: flip-front 0.3s linear 1;
     animation-fill-mode: forwards;
 }
+
+.post__up-link {
+    @extend .fa;
+    position: fixed;
+    bottom: 0;
+    right: 1.3em;
+    color: $font-color-blue;
+    cursor: pointer;
+}
+
+.up-link__icon {
+    @extend .fa-angle-up;
+    font-size: 8em;
+}

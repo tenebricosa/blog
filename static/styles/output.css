@@ -11,7 +11,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.fa, .post-link__link {
+.fa, .post-link__link, .post__up-link {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -68,9 +68,9 @@
 .pull-left {
   float: left; }
 
-.fa.pull-left, .pull-left.post-link__link {
+.fa.pull-left, .pull-left.post-link__link, .pull-left.post__up-link {
   margin-right: 0.3em; }
-.fa.pull-right, .pull-right.post-link__link {
+.fa.pull-right, .pull-right.post-link__link, .pull-right.post__up-link {
   margin-left: 0.3em; }
 
 .fa-spin {
@@ -855,7 +855,7 @@
 .fa-angle-right:before {
   content: "\f105"; }
 
-.fa-angle-up:before {
+.fa-angle-up:before, .up-link__icon:before {
   content: "\f106"; }
 
 .fa-angle-down:before {
@@ -1860,6 +1860,16 @@ a {
   -ms-animation-fill-mode: forwards;
   animation: flip-front 0.3s linear 1;
   animation-fill-mode: forwards; }
+
+.post__up-link {
+  position: fixed;
+  bottom: 0;
+  right: 1.3em;
+  color: #3DC6C3;
+  cursor: pointer; }
+
+.up-link__icon {
+  font-size: 8em; }
 
 @media screen and (max-width: 1200px) {
   .index-content-block {
