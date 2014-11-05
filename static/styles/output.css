@@ -1844,6 +1844,9 @@ a {
   float: right;
   clear: both; }
 
+#disqus_thread {
+  display: none; }
+
 @media screen and (max-width: 1200px) {
   .index-content-block {
     width: 90%; }
