@@ -1673,7 +1673,7 @@ a {
   margin: 7em 0 2em;
   font-size: 0.8em; }
   .footer__sign--gray {
-    color: rgba(0, 39, 59, 0.34902);
+    color: #959595;
     line-height: 1.4em; }
 
 .header {
@@ -1739,7 +1739,7 @@ a {
   max-width: 470px;
   margin-top: 0.6em; }
 .title-block__description--gray {
-  color: rgba(0, 39, 59, 0.34902); }
+  color: #959595; }
 
 .index-content__article-block {
   padding-left: 1%; }
@@ -1761,7 +1761,7 @@ a {
   line-height: 1.4em;
   font-size: 0.9em; }
 .article-block__description--gray {
-  color: rgba(0, 39, 59, 0.34902); }
+  color: #959595; }
 .article-block__additional {
   margin: 1em 0 0;
   font-size: 0.8em; }
