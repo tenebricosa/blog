@@ -29,12 +29,19 @@
 	</div>
 	<div class="post-content-block">
 		<div class="post-header__title-block">
-			<h1 class="title-block__title">Мечты не сбудутся, Газпром</h1>
+			<h1 class="title-block__title">jkhjk</h1>
 		</div>
 	</div>
 	<div class="post-content-block">
 		<article class="post-content">
-			<iframe src="//player.vimeo.com/video/108327741" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/108327741">Вадим Макишвили, Яндекс | 36 | FrontTalks 2014</a> from <a href="http://vimeo.com/fronttalks">FrontTalks Conference</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+			<iframe id="movie__36" src="//player.vimeo.com/video/108327741" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p>
+				<a href="http://vimeo.com/108327741">Вадим Макишвили, Яндекс | 36 | FrontTalks 2014</a>
+				from
+				<a href="http://vimeo.com/fronttalks">FrontTalks Conference</a>
+				on
+				<a href="https://vimeo.com">Vimeo</a>.
+			</p>
 		</article>
 		<div class="post__open-comment-block">
 			<div id="open-comment" class="post__open-comment js-flip">
@@ -73,6 +80,16 @@
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 		})();
 	</script>
+	<script type="text/javascript">
+		function iframeLoaded() {
+	    	var iFrameID = document.getElementById('movie__36');
+	     	if(iFrameID) {
+	            // here you can make the height, I delete it first, then I make it again
+	            iFrameID.height = "";
+	            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+	     	}   
+	 	}
+	</script>   
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
