@@ -1645,7 +1645,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #3DC6C3; }
+  color: inherit; }
 
 .g__row {
   box-sizing: border-box;
@@ -1781,6 +1781,9 @@ a {
   margin: 0 auto;
   width: 55%; }
 
+.post-content-block a {
+  color: #3DC6C3; }
+
 .post-content {
   font-size: 1.2em;
   line-height: 1.7em; }
@@ -1885,7 +1888,9 @@ a {
     .header__button-to-main-block {
       left: 0; }
   .post__link-block {
-    right: 0; } }
+    right: 0; }
+  .post__up-link {
+    display: none; } }
 
 @media screen and (max-width: 980px) {
   .index-content__article-block {
