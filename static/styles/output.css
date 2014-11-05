@@ -1645,7 +1645,7 @@ html {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: #3DC6C3; }
 
 .g__row {
   box-sizing: border-box;
@@ -1843,9 +1843,6 @@ a {
 .post-footer__link-block {
   float: right;
   clear: both; }
-
-#disqus_thread > a:hover {
-  color: #3DC6C3; }
 
 @media screen and (max-width: 1200px) {
   .index-content-block {
