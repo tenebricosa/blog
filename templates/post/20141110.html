@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="../../static/styles/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/styles/output.css" />
+
+	<title>Главней всего - погода в DOMе</title>
+</head>
+<body>
+	<div class="header">
+		<div class="header__button-to-main-block js-flip">
+			<a href="../index.html" class="button-to-main-block__link">Home</a>
+		</div>
+		<div class="post__link-block">
+			<a href="https://twitter.com/tenebricosa" target="_blank" class="post-link__link post-link__link--twitter">
+			</a>
+			<a href="https://github.com/tenebricosa" target="_blank" class="post-link__link post-link__link--github">
+			</a>
+			<a href="https://steamcommunity.com/id/_watson_md_/" target="_blank" class="post-link__link post-link__link--steam">
+			</a>
+		</div>
+		<div id="up-link" class="post__up-link">
+			<a href="#" class="up-link__icon"></a>
+		</div>
+	</div>
+	<div class="post-content-block">
+		<div class="post-header__title-block">
+			<h1 class="title-block__title">Главней <nobr>всего -</nobr> погода <nobr>в DOMе</nobr></h1>
+		</div>
+	</div>
+	<div class="post-content-block">
+		<article class="post-content">
+			<p class="post-content__paragraph">Чуть больше недели назад я получила письмо. Почти из Ховартса. Мне сообщалось, что я поступила в <a href="https://academy.yandex.ru/events/shri/" target="_blank" class="post-content__link">Школу Разработки Интерфейсов</a> [читайте - в Школу Чародейства и Волшебства]. Счастью не было предела, амбиции преодолели рамки реальности, и даже самооценка выдала короткий скачок. В общем, целебные свойства во все поля.</p>
+			<p class="post-content__paragraph">В среду состоялась первая организационная встреча. Было любопытно посмотреть на котанов, прошедших отбор. Все-таки, глядя на них, я могла косвенно оценить свой профессиональный уровень. Если мы все делали одно тестовое, то наши знания и опыт должны быть сравнимы. Но, естественно, тараканы в моей голове сразу после занкомства объявили панику и чрезвычайное положение. Ребята оказались "умнее, опытнее, сообразительнее", а единственная (кроме меня) мадама - "красивее и общительнее". Но не в этот раз я буду делиться душевными переживаниями. Сегодня я хочу рассказать о другом.</p>
+			<p class="post-content__paragraph">Расскажу, например, о том, что преподавателей я встретила с таким же восторгом как встречают легендарных рок-звезд. Каждого из них я уже сотню раз до этого видела на конференциях, в видео-лекциях, на собеседованиях и даже на парочке афтепати, но на этот раз я оказалась к ребятам ближе, чем можно было представить - мне предстояло с ними работать. С каких-то пор я искренне влюблена в эти айтишные морды, поэтому даже в блоге не могу изображать из себя сурового верстальщика. Убейте уже во мне девочку кто-нибудь.</p>
+			<p class="post-content__paragraph">На самом деле, первая встреча со ШРИ, больше меня напугала, чем вдохновила. Больше всего ужаснуло слово API, с которым я никогда тесно не работала. Звучала еще и устрашающая Нода, JS-фреймворки, пулл-реквесты и много других вещей, с которыми я была знакома только по паре статей с <a href="http://frontender.info/" target="_blank" class="post-content__link">Фронтендера</a>. Но больше всего напугала меня, конечно, перспектива заиметь в качестве ментора <a href="https://twitter.com/olmokhov" target="_blank" class="post-content__link">Олега Мохова</a>. Звучит абсурдно, но вот его я всегда очень боялась. Олег всегда казался мне гуру фронтенда и достаточно категоричным человеком. Хотя <a href="https://events.yandex.ru/lib/people/382/" target="_blank" class="post-content__link">цикл лекций</a> о модели отображения открыл мне его как первоклассного преподавателя.</p>
+			<p class="post-content__paragraph">В общем, новый формат ШРИ также не давал облегчения. С одной сторонны, он казался очень удобным, с другой, требовал мозгов и ответственности. Суть такая: по почте нам высылают список лекций, которые необходимо прослушать до грядущего занятия, а на девятичасовых воскресных встречах мы эту информацию систематизируем практикой и запиливаем целый сервис &laquo;Яндекс. Погоду&raquo; с абсолютного нуля. Собственно, вчера я как раз посетила первый хакатон. На команды (по 4-5 человек) нас разбили еще накануне, а вот с менторами в то утро предстояло только определиться. В общем, вы, наверное, уже поняли, к чему я веду: разумеется, я попала прямиком в руки к Олегу. Вторым ментором оказался очаровательный <a href="https://twitter.com/megatolya" target="_blank" class="post-content__link">Толя Островский</a>. Уже спустя пару минут мы оказались на рабочем месте и принялись за обсуждение.</p> 
+			<p class="post-content__paragraph">У меня хватило смелости отказаться от верстки в первой половине дня и заняться инфроструктурой проекта. Ну, сказано громко, а на самом деле я посвятила время настройке Grunt'а и Bower'а. Занималась я этим раз третий в жизни, поэтому дело шло небыстро. Наверное, добрая половина учасников ШРИ сделала бы это быстрее, но мне до них совершенно нет дела. Я могу даже похватстаться тем, что уже до обеда мой скилл подрос и достиг новой планки. Так что старт проекта стал для меня весьма удачным.</p>
+			<p class="post-content__paragraph">А вот вторая половина дня сразу не задалась. Менторы решили, что каждый все же должен приложить руку к верстоньке и мне поручили запилить основной блок с погодой. Задачка на сорок минут от силы, но у меня она отчего-то заняла остаток дня. На самом деле, всему виной перфекционизм: слишком долго я пыталась сообразить, как бы получше все записать, а потом уже начала нервничать, что работаю слишком медленно. Кроме того, возникали вопросы с БЭМом, новой версией фотошопа (приходилось его постоянно подстраивать под привычные нужны) и Stylus'ом (хотела прям сразу заюзать mixin'ы, но не тут-то было). Короче говоря, к вечеру я приписала себя в аутсайдеры и окончательно расстроилась.</p>
+			<p class="post-content__paragraph">Тем не менее, когда, после занятий, пошпилила с <a href="https://twitter.com/mr_apt" target="_blank" class="post-content__link">Томатом</a> в кабак, рот у меня не закрывался, а впечатлениями и отличным зарядом энергии хотелось делиться с каждым прохожим. К слову, Олег Мохов оказался совсем нестрашным, а даже наоборот обаятельным и очень контактным человеком :)</p>
+			<p class="post-content__paragraph">А к чему я, собственно, все это? Да к тому, что ШРИ окончательно изменило мое отношение к фронтенду со времен моей <a href="http://tjournal.ru/paper/sakharova-letter" target="_blank" class="post-content__link">статьи</a> на TJournal. И товарищ <a href="https://twitter.com/straykov" target="_blank" class="post-content__link">Илья Страйков</a> (который не <a href="https://twitter.com/search?f=realtime&q=%D1%81%D1%82%D1%80%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%20%D0%BF%D0%B8%D0%B4%D0%BE%D1%80&src=typd" target="_blank" class="post-content__link">пидор</a>) оказался совершенно прав. Проблема совсем не в том, что мне не нравится выбранная профессия. Проблема в том, что я не могу раскрыться в ней на нынешнем месте работы. Отношение к коду в моей команде и в Яндексе - небо и земля.</p>
+			<p class="post-content__paragraph">Я считают дурным тоном не использовать препроцессоры/постпроцессоры в большом проекте. Считаю, что глупо не позволять внедрять Ноду. Считаю, что система сборки и море всякой шараги можно сделать лучше, а не жить привычной архитектурой из девяностых. Считаю, что Visual Studio - говно, а Винда для верстальщика - отдельная боль. Я много чего еще считаю, но все это рассуждения в пустоту. В команде к моим рассуждениям не прислушаются (пыталась, на самом деле) и имеют полное право. Изменения, о которых я говорю, потребуют слишком много усилий и новых исследований. Одна я, в силу неопытности, такое провернуть не смогу. Да и вообще, один в поле не воин, а КОПФу не нужна революция.</p>
+		</article>
+		<div class="post__open-comment-block">
+			<div id="open-comment" class="post__open-comment js-flip">
+				<span class="open-comment__text">Show comments</span>
+			</div>
+		</div>
+		<div id="disqus_thread" style="display: none"></div>
+	</div>
+	<div class="post-content-block">
+		<div class="footer">
+			<div class="post-footer__link-block">
+				<a href="https://twitter.com/tenebricosa" target="_blank" class="link-block__link link-block__link--twitter js-flip">
+					twitter
+				</a>
+				<a href="https://github.com/tenebricosa" target="_blank" class="link-block__link link-block__link--github js-flip">
+					github
+				</a>
+				<a href="https://steamcommunity.com/id/_watson_md_/" target="_blank" class="link-block__link link-block__link--steam js-flip">
+					steam
+				</a>
+			</div>
+			<span class="footer__sign footer__sign--gray">Когда-нибудь здесь будет полезная информация. На самом деле нет.</span>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../../scripts/script.js"></script>
+	<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'sakharova'; // required: replace example with your forum shortname
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>
