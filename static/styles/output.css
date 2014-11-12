@@ -1692,6 +1692,9 @@ a {
     left: 1.3em;
     cursor: pointer; }
 
+.button-to-main-block__link {
+  display: inline-block; }
+
 .link-block__link {
   color: #3DC6C3;
   display: inline-block;
@@ -1836,7 +1839,8 @@ a {
   font-size: 16px; }
 
 .open-comment__text {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  display: inline-block; }
 
 .post__open-comment-block {
   text-align: center; }

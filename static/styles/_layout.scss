@@ -69,6 +69,10 @@ a {
     }
 }
 
+.button-to-main-block__link {
+    display: inline-block;
+}
+
 .link-block {
     &__link {
         color: $font-color-blue;
