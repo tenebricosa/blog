@@ -10,7 +10,16 @@ $('.js-flip').hover(
 $('#open-comment').on('click', function() {
 	$(this).hide();
 	$('#disqus_thread').show();
-})
+});
+
+$(function() {
+	$(window).on('load scroll', function() {
+		if($(this).scrollTop() > 0)
+			$('#up-link').show();
+		else 
+			$('#up-link').hide();
+	})
+});
 
 $('#up-link').click(function() {
     $('html, body').animate({

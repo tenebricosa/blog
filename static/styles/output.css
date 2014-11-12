@@ -1874,7 +1874,18 @@ a {
   bottom: 0;
   right: 1.3em;
   color: #3DC6C3;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear; }
+  .post__up-link:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear; }
 
 .up-link__icon {
   font-size: 8em; }
