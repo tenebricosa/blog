@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           },
           dist: {
               files: {
-                  'static/styles/output.css': 'static/styles/main.scss'
+                  'dist/output.css': 'static/styles/main.scss'
               }
           }
       },
@@ -23,19 +23,23 @@ module.exports = function(grunt) {
 
       mustache_render: {
         json_data: {
+          options: {template: 'templates/post-layout.mustache'},
           files: [
             {
-              expand: true,
-              src: 'src/posts/*.json',
-              template: 'src/post-layout.mustache',
-              dest: 'dist/temp'
+              'dist/posts/2014-09-18.html': 'templates/posts/2014-09-18.json',
+              'dist/posts/2014-09-24.html': 'templates/posts/2014-09-24.json',
+              'dist/posts/2014-11-05.html': 'templates/posts/2014-11-05.json',
+              'dist/posts/2014-11-10.html': 'templates/posts/2014-11-10.json',
             }
           ]
         },
-      }
+      },
+
+      clean: ["dist/posts/"]
   });
 
   grunt.registerTask('default', ['sass', 'watch']);
-  grunt.registerTask('create-post', ['mustache_render']);
+  grunt.registerTask('create-post', ['clean', 'mustache_render']);
+  grunt.registerTask('build', ['clean', 'mustache_render', 'sass']);
 
 };
