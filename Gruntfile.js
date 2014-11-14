@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           },
           dist: {
               files: {
-                  'dist/output.css': 'static/styles/main.scss'
+                  'dist/blog.css': 'static/styles/main.scss'
               }
           }
       },
@@ -18,6 +18,10 @@ module.exports = function(grunt) {
         sass: {
             files: ['static/styles/*.scss'],
             tasks: ['sass']
+        },
+        templates: {
+            files: ['templates/'],
+            tasks: ['clean', 'mustache_render']
         }
       },
 
@@ -35,11 +39,29 @@ module.exports = function(grunt) {
         },
       },
 
-      clean: ["dist/posts/"]
+      concat: {
+        options: {
+          separator: ';',
+        },
+        dist: {
+          src: ['static/scripts/*.js'],
+          dest: 'dist/temp/blog.js',
+        },
+      },
+
+      uglify: {
+        my_target: {
+          files: {
+            'dist/blog.min.js': ['dist/temp/blog.js']
+          }
+        }
+      },
+
+      clean: ['dist/temp/'],
   });
 
-  grunt.registerTask('default', ['sass', 'watch']);
-  grunt.registerTask('create-post', ['clean', 'mustache_render']);
-  grunt.registerTask('build', ['clean', 'mustache_render', 'sass']);
+  grunt.registerTask('default', ['mustache_render', 'sass', 'concat', 'uglify', 'clean']);
+  grunt.registerTask('create-post', ['mustache_render']);
+  grunt.registerTask('watch', ['mustache_render', 'sass', 'concat', 'uglify', 'clean', 'watch']);
 
 };
