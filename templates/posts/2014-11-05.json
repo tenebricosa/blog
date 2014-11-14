@@ -1,4 +1,7 @@
 {
 	"title" : "36",
+	"main-image" : "../static/images/reeves4.jpg",
+	"day" : "Oсtober 15th, 2014",
+	"preamble" : "Я ошибалась, когда думала, что ни один доклад на технической конференции не заставит меня плакать.",
 	"content" : "<p class='post-content__paragraph'>Наверное, &laquo;форсить доклад-интригу&raquo; в ближайшее время будут не только фронтендщики, но и все их соседи, друзья и родственники. С моей стороны будет безвкусно участвовать в этой айтишной истерии, но я таки позволю себе вторгнуться в стадо баранов и вставить свои пять копеек.</p><p class='post-content__paragraph'>Имею право, ведь в отличие от многих, следила за ходом этого моноспектакля в онгоинге.</p><iframe class='js-fluid-iframe' src='//player.vimeo.com/video/108327741' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href='http://vimeo.com/108327741'>Вадим Макишвили, Яндекс | 36 | FrontTalks 2014</a></p><p class='post-content__paragraph'>Хотела обнять и поблагодарить Вадима еще на афтепати, но застеснялась. Надеюсь, будет возможность исправиться.</p>"
 }
